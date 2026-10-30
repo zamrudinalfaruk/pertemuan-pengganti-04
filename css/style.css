@@ -1,0 +1,402 @@
+
+:root {
+    --navy: #0a1020;
+    --blue: #5a7cff;
+    --blue-dark: #4567eb;
+    --text: #17213a;
+    --muted: #7b8496;
+    --light: #f7f8fc;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text);
+}
+
+.navbar {
+    background: rgba(10, 16, 32, 0.98);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.navbar-brand span {
+    color: #8097ff;
+}
+
+.nav-link {
+    color: #c5cce0;
+    margin: 0 5px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.btn-primary {
+    background: var(--blue);
+    border-color: var(--blue);
+}
+
+.btn-primary:hover {
+    background: var(--blue-dark);
+    border-color: var(--blue-dark);
+}
+
+/* HERO */
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 140px 0 80px;
+    color: white;
+    background:
+        radial-gradient(circle at 85% 30%, rgba(90,124,255,.2), transparent 35%),
+        linear-gradient(135deg, #080e1d, #111e38);
+}
+
+.hero-badge {
+    padding: 10px 15px;
+    color: #b7c5ff;
+    background: rgba(90,124,255,.15);
+    border: 1px solid rgba(135,157,255,.3);
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4.3rem);
+    line-height: 1.12;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #8097ff;
+}
+
+.hero-description {
+    max-width: 520px;
+    color: #b2bdd2;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin-bottom: 28px;
+}
+
+.hero-info {
+    color: #aab8d3;
+    font-size: .9rem;
+}
+
+.hero-image {
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,.15);
+    box-shadow: 0 20px 50px rgba(0,0,0,.25);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 390px;
+    display: block;
+    object-fit: cover;
+}
+
+/* INFORMASI */
+.info-bar {
+    background: var(--light);
+    border-bottom: 1px solid #e8ebf3;
+}
+
+.info-bar h4 {
+    color: var(--blue);
+    font-size: 1.5rem;
+}
+
+.info-bar p {
+    margin-bottom: 0;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+/* SECTION */
+.section-padding {
+    padding: 90px 0;
+}
+
+.section-label {
+    color: var(--blue-dark);
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    margin: 12px 0;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+/* PRODUK */
+.product-card {
+    overflow: hidden;
+    border: 1px solid #e8ebf2;
+    border-radius: 16px;
+    transition: transform .25s, box-shadow .25s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(20,35,70,.12);
+}
+
+.product-card .card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-card .card-body {
+    padding: 23px;
+}
+
+.product-label {
+    color: var(--blue-dark);
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.product-card .card-title {
+    font-weight: 700;
+}
+
+.product-card .card-text {
+    color: var(--muted);
+    font-size: .9rem;
+    line-height: 1.7;
+}
+
+.price {
+    margin: 4px 0 0;
+    font-size: 1.05rem;
+    font-weight: 800;
+}
+
+.product-button {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+}
+
+/* GALERI */
+.gallery-section {
+    background: var(--light);
+}
+
+.gallery-card {
+    height: 100%;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #e8ebf3;
+    border-radius: 16px;
+    transition: transform .3s, box-shadow .3s;
+}
+
+.gallery-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(20,35,70,.12);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 240px;
+    display: block;
+    object-fit: cover;
+    transition: transform .4s;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.04);
+}
+
+.gallery-caption {
+    padding: 16px;
+    color: var(--text);
+    font-weight: 700;
+}
+
+/* KEUNGGULAN */
+.benefits-section {
+    background: white;
+}
+
+.benefit-card {
+    padding: 25px;
+    border: 1px solid #e8ebf3;
+    border-radius: 15px;
+    background: white;
+    transition: transform .25s, box-shadow .25s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(20,35,70,.08);
+}
+
+.benefit-icon {
+    display: grid;
+    place-items: center;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 20px;
+    color: var(--blue-dark);
+    background: #edf0ff;
+    border-radius: 12px;
+    font-size: 1.4rem;
+}
+
+.benefit-card h5 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.benefit-card p {
+    margin-bottom: 0;
+    color: var(--muted);
+    font-size: .87rem;
+    line-height: 1.8;
+}
+
+/* KONTAK */
+.contact-form {
+    padding: 30px;
+    background: var(--light);
+    border: 1px solid #e8ebf3;
+    border-radius: 18px;
+}
+
+.form-label {
+    font-size: .87rem;
+    font-weight: 700;
+}
+
+.form-control,
+.form-select {
+    padding: 12px 14px;
+    border-color: #dfe4ee;
+    border-radius: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 .2rem rgba(90,124,255,.15);
+}
+
+/* FOOTER */
+.footer {
+    padding: 40px 0 25px;
+    color: white;
+    background: var(--navy);
+}
+
+.footer-description {
+    margin-top: 8px;
+    color: #aab4c8;
+    font-size: .88rem;
+}
+
+.footer-links a {
+    display: inline-block;
+    margin-left: 18px;
+    color: #c5cce0;
+    text-decoration: none;
+    font-size: .88rem;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer hr {
+    margin: 25px 0 20px;
+    border-color: rgba(255,255,255,.15);
+}
+
+/* TABLET */
+@media (max-width: 991.98px) {
+    .hero {
+        padding-top: 125px;
+    }
+
+    .hero-image img {
+        height: 330px;
+    }
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .navbar-collapse {
+        padding-top: 15px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 575.98px) {
+    .hero {
+        padding: 115px 0 55px;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
+        letter-spacing: -1px;
+    }
+
+    .hero-description {
+        font-size: .95rem;
+    }
+
+    .hero .btn {
+        font-size: .8rem;
+    }
+
+    .hero-image img {
+        height: 250px;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .product-card .card-img-top {
+        height: 200px;
+    }
+
+    .gallery-card img {
+        height: 140px;
+    }
+
+    .gallery-caption {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .footer-links a {
+        margin: 0 14px 0 0;
+    }
+}
